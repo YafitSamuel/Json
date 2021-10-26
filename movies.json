@@ -1,0 +1,44 @@
+
+
+
+
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "606d7d2c110a540674caa27a",
+            "movieName": "dsfd",
+            "rating": 3,
+            "date": "2021-04-07T09:36:44.053Z",
+            "__v": 0
+        },
+        {
+            "_id": "607828bcd9def60015535fcc",
+            "movieName": "asd",
+            "rating": 3,
+            "date": "2021-04-15T11:51:24.833Z",
+            "__v": 0
+        },
+        {
+            "_id": "60815daa6b305d8dcd07c674",
+            "movieName": "assassas",
+            "rating": 3,
+            "date": "2021-04-22T11:27:38.067Z",
+            "__v": 0
+        },
+        {
+            "_id": "6122459bdbf6109484b6d2eb",
+            "movieName": "asd",
+            "rating": 4,
+            "date": "2021-08-22T12:39:55.115Z",
+            "__v": 0
+        },
+        {
+            "_id": "612245fcbb593194fcda74d0",
+            "movieName": "fhfgh",
+            "rating": 3,
+            "date": "2021-08-22T12:41:32.969Z",
+            "__v": 0
+        }
+    ]
+}

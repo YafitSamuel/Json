@@ -262,3 +262,70 @@ asyncPromiseGetArrayUsers()
   });
 // =======================6=======================
 
+function loadingGif() {
+  shimi.innerHTML = `<img id="img" src="./image/990.gif">`;
+}
+
+function stopLoadingGif() {
+  img.style.display = "none";
+}
+
+function showInScreen(objUser) {
+  for (const key in objUser) {
+    shimi.innerHTML += `<p>${key}: ${objUser[key]}</p> `;
+  }
+}
+ function showError(){
+  pi.innerHTML += `<p> ${rej.massage}</p>`;
+ }
+
+btn.onclick = () => {
+  loadingGif();
+  setTimeout(() => {
+    switch (select.value) {
+      case "id":
+        getIdFromUser(inp.value)
+          .then((res) => {
+            showInScreen(res);
+          })
+          .catch((rej) => {
+            showError();
+          })
+          .finally(() => {
+            stopLoadingGif();
+          });
+
+        break;
+      case "name":
+        promiseGetArrayUsers(inp.value)
+          .then((res) => {
+            showInScreen(res);
+          })
+          .catch((rej) => {
+            showError();
+          })
+          .finally(() => {
+            stopLoadingGif();
+          });
+
+        break;
+      case "email":
+        getEmailFromUser(inp.value)
+          .then((res) => {
+            showInScreen(res);
+          })
+          .catch((rej) => {
+            showError();
+          })
+          .finally(() => {
+            stopLoadingGif();
+          });
+
+        break;
+
+      default:
+        console.log("not found");
+        break;
+    }
+  }, 3000);
+};
